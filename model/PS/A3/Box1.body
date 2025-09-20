@@ -14,7 +14,7 @@ links:
         type: Shape
         geometry:
           type: Box
-          size: [ 1.8, 2.5, 1.5]
+          size: [ 1.8, 0.9, 1.5]
 #          type: Extrusion
 #          cross_section: [
 #            -0.75, -0.75,

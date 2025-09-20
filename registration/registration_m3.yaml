@@ -11,5 +11,4 @@ registrations:
     simulator_project: [ AGXSimulator, AISTSimulator ]
     view_project: M3/RefereeView
     enable_recording: false
-    # enable_tracking: true
-    enable_ros: false
+    enable_ros: true
