@@ -27,3 +27,13 @@ install(DIRECTORY
 
 add_subdirectory(controller)
 add_subdirectory(src)
+
+install(DIRECTORY third_party/inSect_Cratlas/model/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/model)
+
+install(DIRECTORY third_party/inSect_Cratlas/meshes/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/meshes)
+
+install(DIRECTORY third_party/inSect_Cratlas/project/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/project/inSect_project
+        FILES_MATCHING PATTERN "*.cnoid")
