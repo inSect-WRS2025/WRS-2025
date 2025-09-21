@@ -30,10 +30,17 @@ add_subdirectory(src)
 
 install(DIRECTORY third_party/inSect_Cratlas/model/
         DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/model)
+install(DIRECTORY third_party/inSect_Mothcope/model/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/model)
 
 install(DIRECTORY third_party/inSect_Cratlas/meshes/
         DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/meshes)
+install(DIRECTORY third_party/inSect_Mothcope/meshes/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/meshes)
 
 install(DIRECTORY third_party/inSect_Cratlas/project/
+        DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/project/inSect_project
+        FILES_MATCHING PATTERN "*.cnoid")
+install(DIRECTORY third_party/inSect_Mothcope/project/
         DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025/project/inSect_project
         FILES_MATCHING PATTERN "*.cnoid")
